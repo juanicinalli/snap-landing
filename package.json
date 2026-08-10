@@ -1,0 +1,15 @@
+{
+  "name": "snap-solutions-landing",
+  "version": "1.0.0",
+  "description": "Landing page de Snap Solutions — marketing, automatización y software a medida con IA.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --host"
+  },
+  "devDependencies": {
+    "vite": "^5.4.10"
+  }
+}

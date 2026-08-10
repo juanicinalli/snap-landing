@@ -1,0 +1,5 @@
+# Permite que Google y demás buscadores rastreen todo el sitio.
+User-agent: *
+Allow: /
+
+Sitemap: https://snapsolutions.io/sitemap.xml
