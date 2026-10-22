@@ -348,3 +348,5 @@ html,body{overflow-x:clip}
   .tf-stats{grid-template-columns:repeat(3,1fr);gap:.6rem}
 }
 @media(prefers-reduced-motion:reduce){.tf-slide{transition:none}}
+
+.tf-q{background:rgba(255,255,255,.06);color:#fff;border-left:3px solid #FFC300}.tf-q span{color:rgba(255,255,255,.55)}
