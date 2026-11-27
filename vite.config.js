@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite'
+import { resolve } from 'path'
 
 // Configuración de Vite para la landing de Snap Solutions.
 // El sitio es estático: `npm run build` genera la carpeta `dist/`
@@ -18,6 +19,13 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
-    sourcemap: false
+    sourcemap: false,
+    // Varias páginas: la home y /soluciones (productos)
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'index.html'),
+        soluciones: resolve(__dirname, 'soluciones.html')
+      }
+    }
   }
 })

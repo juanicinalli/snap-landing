@@ -1,4 +1,5 @@
 import './style.css'
+import './soluciones.css'
 
 // Sombra del nav al hacer scroll
 const hdr = document.getElementById('hdr')
