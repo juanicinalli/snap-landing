@@ -24,7 +24,11 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        soluciones: resolve(__dirname, 'soluciones.html')
+        soluciones: resolve(__dirname, 'soluciones.html'),
+        en: resolve(__dirname, 'en/index.html'),
+        en_soluciones: resolve(__dirname, 'en/soluciones.html'),
+        pt: resolve(__dirname, 'pt/index.html'),
+        pt_soluciones: resolve(__dirname, 'pt/soluciones.html')
       }
     }
   }

@@ -1,6 +1,8 @@
 /* ===================== PRODUCTOS SNAP (página /soluciones) ===================== */
 .nav-links a.on{color:var(--red)}
 .nav-links a{white-space:nowrap}
+.nav-cta .btn{white-space:nowrap}
+.brand{white-space:nowrap}
 @media(max-width:1100px){.nav-links{gap:1.3rem}}
 
 /* ---- Hero de productos ---- */
@@ -255,3 +257,10 @@
 @media(prefers-reduced-motion:reduce){
   .mk .a{opacity:1;transform:none}.mk.play *{animation-duration:.01s!important;animation-delay:0s!important}
 }
+
+/* ---- Selector de idioma ---- */
+.lang-sw{display:flex;gap:2px;background:var(--bg-alt);border:1px solid var(--line);border-radius:999px;padding:3px}
+.lang-sw a{font-size:.72rem;font-weight:700;padding:.3rem .55rem;border-radius:999px;color:var(--ink-soft);line-height:1;transition:color .15s}
+.lang-sw a:hover{color:var(--red)}
+.lang-sw a.on{background:#fff;color:var(--red);box-shadow:0 2px 6px -2px rgba(26,21,18,.2)}
+@media(max-width:520px){.lang-sw a{padding:.28rem .42rem;font-size:.66rem}}
