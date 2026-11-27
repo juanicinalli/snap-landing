@@ -20,15 +20,15 @@ export default defineConfig({
     outDir: 'dist',
     assetsDir: 'assets',
     sourcemap: false,
-    // Varias páginas: la home y /soluciones (productos)
+    // Varias páginas: la home y /prospectos (productos, oculta)
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        soluciones: resolve(__dirname, 'soluciones.html'),
+        prospectos: resolve(__dirname, 'prospectos.html'),
         en: resolve(__dirname, 'en/index.html'),
-        en_soluciones: resolve(__dirname, 'en/soluciones.html'),
+        en_prospectos: resolve(__dirname, 'en/prospectos.html'),
         pt: resolve(__dirname, 'pt/index.html'),
-        pt_soluciones: resolve(__dirname, 'pt/soluciones.html')
+        pt_prospectos: resolve(__dirname, 'pt/prospectos.html')
       }
     }
   }
