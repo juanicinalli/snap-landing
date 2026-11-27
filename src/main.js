@@ -102,3 +102,8 @@ document.querySelectorAll('[data-wa]').forEach((el) => {
     const step=now=>{const k=Math.min(1,(now-t0)/d),ease=1-Math.pow(1-k,3);el.textContent=fmt(p,p.n*ease);if(k<1)requestAnimationFrame(step);else el.textContent=el.dataset.count};requestAnimationFrame(step)}),{threshold:.4});
   els.forEach(el=>io.observe(el));
 })();
+
+// Clics hacia la agenda de reuniones (Google Calendar)
+document.querySelectorAll('[data-agenda]').forEach((el) => {
+  el.addEventListener('click', () => (window.dataLayer = window.dataLayer || []).push({ event: 'agenda_click', cta_location: el.dataset.agenda }))
+})

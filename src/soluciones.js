@@ -46,3 +46,8 @@ document.querySelectorAll('.mk').forEach((mk) => {
   }), { threshold: 0.4 })
   document.querySelectorAll('[data-count]').forEach((el) => cio.observe(el))
 })()
+
+// Clics hacia la agenda de reuniones (Google Calendar)
+document.querySelectorAll('[data-agenda]').forEach((el) => {
+  el.addEventListener('click', () => (window.dataLayer = window.dataLayer || []).push({ event: 'agenda_click', cta_location: el.dataset.agenda }))
+})
